@@ -1,8 +1,13 @@
+/* É interessante iniciar o projeto zerando as margens e o padding da pagina principal */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/* A pseudo-class é como nossa página em branco. Então eu já configuro tudo pra ela.
+Excelente ideia organizar as cores por variável. Usar mais :) */
 
 :root {
   --brand-color: #EF5F4C;
@@ -12,9 +17,37 @@
   --shape-transparency: #ffffff8f;
   --text-color-primary: #313131;
   --text-color-secondary: #6C6C6C;
+  --font-family: "Poppins", sans-serif;
+  /* text-lg: large // text-md: middle // text-sm: small // text: normal */
+  --text-lg: bold 32px/125% var(--font-family);
+  --text-md: 14px/170% var(--font-family);
+  --text-sm: 12px/170% var(--font-family);
+  --text: 16px/1.5 var(--font-family);
 }
 
 body{
   color: var(--text-color-secondary);
   background-color: var(--background-color);
 }
+
+/* Explorar */
+
+width: 64px;
+height: 24px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+display: flex;
+align-items: center;
+
+color: #6C6C6C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
